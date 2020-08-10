@@ -26,6 +26,24 @@
             .largeImg{
                 width:250px;
                 height:220px;
+            
+            }
+            
+            #columnA {
+              float: left;
+              width: 50%;
+            }
+            
+             #columnB {
+              float: left;
+              width: 50%;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
             }
             
         
@@ -58,8 +76,8 @@
     
     
     
-           <div align="center">
-           
+           <div align="center" class="row">
+            <div id="columnA">
         <div class="card" style="width: 18rem; height: 23rem;">
   <img src="adidas.jpng.jpg" class="card-img-top" alt="adidas">
   <div class="card-body">
@@ -98,7 +116,11 @@
            
            
            
-    
+    </div>
+    <div id="columnB">
+            <h1></h1>   
+               
+    </div>
     
     
     
